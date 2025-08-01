@@ -9,7 +9,11 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "git": "git add . && git commit -m 'update' && git push"
+    "git": "git add . && git commit -m 'update' && git push",
+        "predeploy": "ng build --configuration production --base-href https://github.com/manigandan88/Investment-tracker-new/",
+    "deploy": "gh-pages -d dist/investment-tracker",
+    "upload": "ng build --prod --base-href ./"
+
   },
   "private": true,
   "dependencies": {
